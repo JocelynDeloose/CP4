@@ -1,33 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Class from "./pages/Class";
 import Lore from "./pages/Lore";
 import Personnage from "./pages/Personnage";
-
-import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import "./utils.scss";
 
 export default function App() {
   return (
     <Router>
+      <NavBar />
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Accueil</Link>
-            </li>
-            <li>
-              <Link to="classes">classes</Link>
-            </li>
-            <li>
-              <Link to="personnage">Personnage</Link>
-            </li>
-            <li>
-              <Link to="lore">Lore</Link>
-            </li>
-          </ul>
-        </nav>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="classes" element={<Class />} />

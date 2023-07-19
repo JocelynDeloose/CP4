@@ -1,0 +1,26 @@
+.objectiveTextContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3em;
+}
+.objectiveTextBoxImg {
+  background-image: url(../../assets/images/scenejdr.jpg);
+  background-size: cover;
+  border-radius: 1.5em;
+  order: solid black;
+  padding: 2em;
+}
+.objectiveTextTitle {
+  font-size: 3rem;
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+
+.objectiveTextP {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-bottom: 10em;
+  font-weight: bolder;
+}
