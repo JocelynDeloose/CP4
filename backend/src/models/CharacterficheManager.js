@@ -18,18 +18,16 @@ class CharacterficheManager extends AbstractManager {
   add(characterfiche) {
     return this.database.query(
       `INSERT INTO characterfiche (classrole_id, lastname, firstname, age, sex, affinity, lore)
-      SELECT classrole.id, ?, ?, ?, ?, ?, ?
-      FROM classrole
-      WHERE classrole.name = ?;
-    `,
+      VALUES
+        ((SELECT id FROM classrole WHERE name = ?), ?, ?, ?, ?, ?, ?)`,
       [
+        characterfiche.classrole,
         characterfiche.lastname,
         characterfiche.firstname,
         characterfiche.age,
         characterfiche.sex,
         characterfiche.affinity,
         characterfiche.lore,
-        characterfiche.classRole.name,
       ]
     );
   }

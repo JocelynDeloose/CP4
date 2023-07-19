@@ -31,13 +31,13 @@ const models = {};
 
 const ClassroleManager = require("./ClassroleManager");
 
-models.item = new ClassroleManager();
-models.item.setDatabase(pool);
+models.classrole = new ClassroleManager();
+models.classrole.setDatabase(pool);
 
 const CharacterficheManager = require("./CharacterficheManager");
 
-models.item = new CharacterficheManager();
-models.item.setDatabase(pool);
+models.characterfiche = new CharacterficheManager();
+models.characterfiche.setDatabase(pool);
 
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
