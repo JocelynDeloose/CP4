@@ -13,7 +13,8 @@ CREATE TABLE classrole (
   primary_stat VARCHAR(20) NOT NULL,
   weapon VARCHAR(20) NOT NULL,
   `description` TEXT NOT NULL,
-  skills TEXT NOT NULL
+  skills TEXT NOT NULL,
+  imagename VARCHAR(50)
 );
 
 -- Insertion des données dans la table "class"

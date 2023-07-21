@@ -11,12 +11,12 @@ export default function NavBar() {
           </NavLink>
         </li>
         <li className="navText">
-          <NavLink to="classes" className="navTextDecoration">
-            classes
+          <NavLink to="Mes personnages" className="navTextDecoration">
+            Mes personnages
           </NavLink>
         </li>
         <li className="navText">
-          <NavLink to="personnage" className="navTextDecoration">
+          <NavLink to="Fiche personnage" className="navTextDecoration">
             Personnage
           </NavLink>
         </li>

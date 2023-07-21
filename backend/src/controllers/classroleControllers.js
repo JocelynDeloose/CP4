@@ -1,7 +1,7 @@
 const models = require("../models");
 
 const browse = (req, res) => {
-  models.class
+  models.classrole
     .findAll()
     .then(([rows]) => {
       res.send(rows);
@@ -13,7 +13,7 @@ const browse = (req, res) => {
 };
 
 const read = (req, res) => {
-  models.class
+  models.classrole
     .find(req.params.id)
     .then(([rows]) => {
       if (rows[0] == null) {
@@ -35,7 +35,7 @@ const edit = (req, res) => {
 
   classe.id = parseInt(req.params.id, 10);
 
-  models.class
+  models.classrole
     .update(classe)
     .then(([result]) => {
       if (result.affectedRows === 0) {
@@ -55,7 +55,7 @@ const add = (req, res) => {
 
   // TODO validations (length, format...)
 
-  models.class
+  models.classrole
     .insert(classe)
     .then(([result]) => {
       res.location(`/classs/${result.insertId}`).sendStatus(201);
@@ -67,7 +67,7 @@ const add = (req, res) => {
 };
 
 const destroy = (req, res) => {
-  models.class
+  models.classrole
     .delete(req.params.id)
     .then(([result]) => {
       if (result.affectedRows === 0) {

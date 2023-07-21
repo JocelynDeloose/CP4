@@ -6,18 +6,21 @@ import Lore from "./pages/Lore";
 import Personnage from "./pages/Personnage";
 import NavBar from "./components/NavBar/NavBar";
 import "./utils.scss";
+import "./App.scss";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
     <Router>
-      <NavBar />
-      <div>
+      <div className="backgroundColorOrImage">
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="classes" element={<Class />} />
-          <Route path="personnage" element={<Personnage />} />
+          <Route path="Mes personnages" element={<Class />} />
+          <Route path="Fiche personnage" element={<Personnage />} />
           <Route path="lore" element={<Lore />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -10,7 +10,7 @@ export default function CatchyText() {
           Plongez dans l'enfer de Santuaire, un monde sombre et impitoyable, où
           le combat entre les forces du bien et du mal atteint son apogée.
         </p>
-        <span className="catchySpan">Et vous dans quel camp irez-vous?</span>
+        <span className="catchySpan">Et vous, dans quel camp irez-vous?</span>
       </div>
     </div>
   );

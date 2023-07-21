@@ -4,8 +4,7 @@ export default function Objective() {
   return (
     <div className="objectiveTextContainer">
       <h1 className="objectiveTextTitle">
-        Vous avez toujours voulu créer votre personnage pour un JDR dans
-        l'univers de Diablo?
+        créer votre personnage dans l'univers de Diablo
       </h1>
 
       <div className="objectiveTextBoxImg">

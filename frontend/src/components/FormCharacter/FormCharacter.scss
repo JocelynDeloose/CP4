@@ -1,0 +1,70 @@
+.formGlobalContainer {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.formContainer {
+  margin-top: 2em;
+  border: solid black;
+  border-radius: 1.5em;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  background-image: url(../../assets/images/religiondiablo.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.formMainTitle {
+  color: black;
+  font-size: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+}
+
+.formSelect {
+  border-radius: 0.5em;
+  height: 2em;
+  border: solid 1px black;
+}
+
+.formInput {
+  border-radius: 0.5em;
+  height: 2em;
+  border: solid 1px black;
+  font-size: 1em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.formInputLore {
+  border-radius: 0.5em;
+  min-width: 120%;
+  height: 8em;
+  border: solid 1px black;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.formBtn {
+  border-radius: 0.5em;
+  border-bottom-style: none;
+  width: 41%;
+  height: 2em;
+  font-size: 1em;
+  font-weight: bolder;
+  border: solid 1px black;
+}

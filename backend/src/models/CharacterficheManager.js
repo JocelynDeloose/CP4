@@ -6,7 +6,11 @@ class CharacterficheManager extends AbstractManager {
   }
 
   findAll() {
-    return this.database.query(`select * from  ${this.table}`);
+    return this.database
+      .query(`SELECT cf.id, cf.lastname, cf.firstname, cf.age, cf.sex, cf.affinity, cf.lore, cr.name AS class_role
+    FROM characterfiche cf
+    INNER JOIN classrole cr ON cf.classrole_id = cr.id;
+    `);
   }
 
   find(id) {

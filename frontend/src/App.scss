@@ -1,0 +1,10 @@
+.backgroundColorOrImage {
+  background-color: rgb(151, 10, 10);
+  background: radial-gradient(
+    circle,
+    rgb(172, 17, 17) 0%,
+    rgba(8, 8, 8, 0.942) 100%
+  );
+  max-width: 100vw;
+  min-height: 100%;
+}

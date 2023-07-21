@@ -1,0 +1,28 @@
+.storyGlobalContainer {
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 3em;
+  h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+    color: white;
+    text-shadow: 1px 2px 2px black, 0 0 1em black, 0 0 0.2em black;
+  }
+  p {
+    font-size: 1.3em;
+    color: whitesmoke;
+    text-justify: auto;
+  }
+}
+
+.storyMainTitle {
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+  margin-bottom: 2em;
+}
+
+.storyOriginContainer {
+  margin-bottom: 3em;
+}

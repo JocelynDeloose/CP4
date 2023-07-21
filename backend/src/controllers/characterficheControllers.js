@@ -51,14 +51,14 @@ const edit = (req, res) => {
 };
 
 const add = (req, res) => {
-  const characterfiche = req.body;
+  const characterData = req.body;
 
   // TODO validations (length, format...)
 
   models.characterfiche
-    .add(characterfiche)
+    .add(characterData)
     .then(([result]) => {
-      res.location(`/characterfiches/${result.insertId}`).sendStatus(201);
+      res.location(`/characterfiche/${result.insertId}`).sendStatus(201);
     })
     .catch((err) => {
       console.error(err);

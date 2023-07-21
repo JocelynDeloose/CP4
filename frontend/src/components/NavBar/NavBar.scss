@@ -1,11 +1,12 @@
 .navBarContainer {
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 1em;
+  height: 10vh;
   background-color: transparent;
   position: sticky;
-  border: solid black;
+  border-bottom: solid 0.5px white;
 }
 
 .navListContainer {
@@ -23,6 +24,8 @@
 
 .navTextDecoration {
   text-decoration: none !important;
-  color: black;
+  text-shadow: 1px 2px 2px black, 0 0 1em black, 0 0 0.2em black;
+  font-size: 1.3em;
   font-weight: bolder;
+  color: white;
 }
